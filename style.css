@@ -1,0 +1,213 @@
+/* Start of Calendar Day Grid CSS */
+#day_row_grid_container {
+  width: 95%;
+  height: 100%;
+  /*border: 1px solid black;*/
+  overflow: auto;
+  background-color: #FCFDFF;
+}
+
+#day_row_grid_container p {
+  color: #828289;
+}
+
+.header_row {
+  width: 100%;
+  height: 5%;
+  /*border: 1px dotted red;*/
+  display: flex;
+}
+
+.hour_content {
+  width: 100%;
+  height: 8%;
+  /*border: 1px dotted blue;*/
+}
+
+.hour_container {
+  width: 10%;
+  height: 100%;
+  background-color: #FCFDFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal_line_container {
+  width: 88%;
+  height: 100%;
+  background-color: #FCFDFF;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal_line {
+  width: 100%;
+  height: 5%;
+  background-color: #caccce;
+}
+
+/* End of Calendar Day Grid CSS */
+html {
+  width: 100%;
+  height: 100%;
+
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main_container {
+  width: 100%;
+  height: 100%;
+}
+
+#dashboard_nav_container {
+  width: 100%;
+  height: 10%;
+}
+
+#glance_container {
+  height: 6.65%;
+}
+
+#date_header_container {
+  height: 15.75%;
+}
+
+#calendar_content_container {
+  height: 77.6%;
+}
+
+#calendar_header_container {
+  height: 11.6%;
+}
+
+#calendar_legend {
+  height: 11.6%;
+}
+
+#body_content_container {
+  width: 100%;
+  height: 90%;
+}
+
+#content_container {
+  width: 90%;
+  height: 90%;
+}
+
+
+#date_header_container_left {
+  padding-left: 1.5em;
+}
+
+#calendar_container {
+  /*border: 1px solid red;*/
+  height: 76.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.flex_container { display: flex; }
+
+.flex_centered_content { justify-content: center; align-items: center; }
+
+.flex_centered_align { align-items: center;}
+
+.flex_column { flex-direction: column; }
+
+.logo_text_container { width: 45%; height: 70%; }
+
+.one_third_width { width: 33.33%; }
+
+.width_15_percent { width: 15%;}
+
+.width_20_percent { width: 20%; }
+
+.width_70_percent { width: 70%; }
+
+.width_80_percent { width: 80%; }
+
+.width_90_percent { width: 90%; }
+
+.width_100_percent { width: 100%; }
+
+.height_5_percent { height: 5%; }
+
+.height_7_percent { height: 7%; }
+
+.height_8_percent { height: 8%; }
+
+.height_10_percent { height: 10%; }
+
+.height_12_percent { height: 12%; }
+
+.height_15_percent { height: 15%; }
+
+.height_16_percent { height: 16%; }
+
+.height_19_percent { height: 19%; }
+
+.height_20_percent { height: 20%; }
+
+.height_35_percent { height: 35%; }
+
+.height_40_percent { height: 40%; }
+
+.height_65_percent { height: 65%; }
+
+.height_70_percent { height: 70%; }
+
+.height_73_percent { height: 73%; }
+
+.height_83_percent { height: 83%; }
+
+.height_90_percent { height: 90%; }
+
+.height_100_percent { height: 100%; }
+
+.height_120_px { height: 120px; }
+
+.height_1000_px { height: 1000px; }
+
+.border_radius_40_px { border-radius: 40px; }
+
+.console_font { font-family: Verdana, sans-serif; }
+
+.navbar_blue { background-color: #16c6f7 }
+
+.oval_blue { background-color: #66d9ff; }
+
+.date_header_blue { background-color: #188AE2 }
+
+.custom_white_background { background-color: #FCFDFF; }
+
+.custom_grey_background { background-color: #ECF1F5; }
+
+.custom_heather_grey_background { background-color: #f6f6f6; }
+
+.custom_white_text { color: #FCFDFF; }
+
+.custom_grey_text { color: #828289; }
+
+.custom_grey_text_lighter { color: #babec1; }
+
+.innerbox_shadow_top { box-shadow: inset 0 13px 9px -7px #ccc; }
+
+.outerbox_shadow { box-shadow: 3px 3px 10px 6px #ccc; }
+
+.font_size_18_px { font-size: 18px; }
+
+.font_size_20_px { font-size: 20px; }
+
+.font_size_22_px { font-size: 22px; }
+
+.first_bullet{ color: #33cc00; }
+
+.second_bullet { color: #ff6600; }
+
+.hide_ul_bullet { list-style-type: none; }

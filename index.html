@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Calendar Day Example</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script> 
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="dashboard_nav_container" class="console_font">
+        <div id="navbar_container" class="flex_container height_65_percent navbar_blue custom_white_text">
+          <div id="navbar_left" class="flex_container one_third_width">
+            <div id="nbl_left" class="flex_container flex_centered_content one_third_width">
+              <div id="home_logo_text_container" class="logo_text_container">
+                <div id="home_logo_container" class="flex_container flex_centered_content height_65_percent"><img src="home.png"></div>
+                <div id="home_text_container" class="flex_container flex_centered_content height_35_percent"><p>Home</p></div>
+              </div>
+            </div>
+          </div>
+          <div id="navbar_middle" class="flex_container flex_centered_content one_third_width">
+            <div id="navbar_oval" class="flex_container flex_centered_content width_80_percent height_40_percent border_radius_40_px oval_blue"><p>Math 206 123-456</p></div>
+          </div>
+          <div id="navbar_right" class="flex_container flex_centered_content one_third_width">
+            <div id="nbr_left" class="one_third_width"></div>
+            <div id="nbr_middle" class="flex_container flex_centered_content one_third_width height_100_percent">
+              <div id="settings_logo_text_container" class="logo_text_container">
+                <div id="settings_logo_container" class="flex_container flex_centered_content height_65_percent"><img src="settings.png"></div>
+                <div id="settings_text_container" class="flex_container flex_centered_content height_35_percent"><p>Settings</p></div>
+              </div>
+            </div>
+            <div id="nbr_right" class="flex_container flex_centered_content one_third_width height_100_percent">
+              <div id="logout_logo_text_container" class="logo_text_container">
+                <div id="logout_logo_container" class="flex_container flex_centered_content height_65_percent"><img src="logout.png"></div>
+                <div id="logout_text_container" class="flex_container flex_centered_content height_35_percent"><p>Logout</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dashboard_container" class="height_35_percent custom_white_background">
+          <div id="dashboard_header_container" class="flex_container flex_centered_content width_15_percent height_100_percent"><p class="console_font custom_grey_text">Dashboard</p></div>
+        </div>
+      </div>
+      <div id="body_content_container" class="flex_container flex_centered_content innerbox_shadow_top custom_grey_background">
+        <div id="content_container" class="custom_white_background outerbox_shadow console_font">
+
+
+          <div id="glance_container" class="flex_container custom_white_background custom_grey_text">
+            <div id="glance_day_view" class="flex_container flex_centered_content width_20_percent"><p>Day View</p></div>
+            <div id="glance_week_view" class="flex_container flex_centered_content width_20_percent"><p class="custom_grey_text_lighter">Week View</p></div>
+            <div id="glance_month_view" class="flex_container flex_centered_content width_20_percent"><p class="custom_grey_text_lighter">Month View</p></div>
+          </div>
+          <div id="date_header_container" class="flex_container flex_column date_header_blue">
+            <div id="date_header_container_left" class="width_20_percent height_100_percent custom_white_text">
+              <div id="above_header_year" class="height_10_percent"></div>
+              <div id="date_header_year_container" class="flex_container flex_centered_align height_20_percent"><p class="font_size_18_px">2017</p></div>
+              <div id="date_header_month_container" class="flex_container flex_centered_align height_40_percent"><p class="font_size_22_px">Thu, Apr 13</p></div>
+              <div id="date_header_week_container" class="flex_container flex_centered_align height_20_percent"><p class="font_size_18_px">Week 12</p></div>
+              <div id="below_date_header" class="height_10_percent"></div>
+            </div>
+          </div>
+          <div id="calendar_content_container">
+            <div id="calendar_header_container" class="flex_container">
+              <div id="back_arrow_logo_container" class="flex_container flex_centered_content width_15_percent"><img src="left-arrow-on-circle.png"></div>
+              <div id="calendar_content_header_container" class="flex_container flex_centered_content width_70_percent"><p class="custom_grey_text font_size_20_px">April 2017</p></div>
+              <div id="next_arrow_logo_container" class="flex_container flex_centered_content width_15_percent"><img src="right-arrow-on-circle.png"></div>
+            </div>
+
+
+            <div id="calendar_container">
+
+
+
+
+
+              <div id="day_row_grid_container">
+                <div id="12_am" class="header_row"><div class="hour_container"><p>12am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="12_am_to_1_am" class="hour_content"></div>
+                <div id="1_am" class="header_row"><div class="hour_container"><p>1am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="1_am_to_2_am" class="hour_content"></div>
+                <div id="2_am" class="header_row"><div class="hour_container"><p>2am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="2_am_to_3_am" class="hour_content"></div>
+                <div id="3_am" class="header_row"><div class="hour_container"><p>3am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="3_am_to_4_am" class="hour_content"></div>
+                <div id="4_am" class="header_row"><div class="hour_container"><p>4am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="4_am_to_5_am" class="hour_content"></div>
+                <div id="5_am" class="header_row"><div class="hour_container"><p>5am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="5_am_to_6_am" class="hour_content"></div>
+                <div id="6_am" class="header_row"><div class="hour_container"><p>6am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="6_am_to_7_am" class="hour_content"></div>
+                <div id="7_am" class="header_row"><div class="hour_container"><p>7am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="7_am_to_8_am" class="hour_content"></div>
+                <div id="8_am" class="header_row"><div class="hour_container"><p>8am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="8_am_to_9_am" class="hour_content"></div>
+                <div id="9_am" class="header_row"><div class="hour_container"><p>9am</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="9_am_to_10_am" class="hour_content"></div>
+                <div id="10_am" class="header_row"><div class="hour_container"><p>10pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="10_am_to_11_am" class="hour_content"></div>
+                <div id="11_am" class="header_row"><div class="hour_container"><p>11pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="11_am_to_12_pm" class="hour_content"></div>
+                <div id="12_pm" class="header_row"><div class="hour_container"><p>12pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="12_pm_to_1_pm" class="hour_content"></div>
+                <div id="1_pm" class="header_row"><div class="hour_container"><p>1pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="1_pm_to_2_pm" class="hour_content"></div>
+                <div id="2_pm" class="header_row"><div class="hour_container"><p>2pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="2_pm_to_3_pm" class="hour_content"></div>
+                <div id="3_pm" class="header_row"><div class="hour_container"><p>3pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="3_pm_to_4_pm" class="hour_content"></div>
+                <div id="4_pm" class="header_row"><div class="hour_container"><p>4pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="4_pm_to_5_pm" class="hour_content"></div>
+                <div id="5_pm" class="header_row"><div class="hour_container"><p>5pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+                <div id="5_pm_to_6_pm" class="hour_content"></div>
+                <div id="6_pm" class="header_row"><div class="hour_container"><p>6pm</p></div><div class="horizontal_line_container"><div class="horizontal_line"></div></div></div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <div id="calendar_legend" class="flex_container flex_centered_align custom_heather_grey_background">
+              <ul class="hide_ul_bullet console_font custom_grey_text">
+                <li> <span class="first_bullet">&#x25CF;</span> &nbspLessons </li>
+                <li> <span class="second_bullet">&#x25CF;</span> &nbspAssignments Due </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
