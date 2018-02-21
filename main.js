@@ -30,15 +30,9 @@ mainApp.controller('monthController', function($scope) {
 });
 
 mainApp.controller('dayController', function($scope) {
-	$scope.students = [
-		{name: 'Mark Waugh', city:'New York'},
-		{name: 'Steve Jonathan', city:'London'},
-		{name: 'John Marcus', city:'Paris'}
-	];
-
-	$scope.message = "Click on the hyper link to view the students list.";
+	$scope.day = ["12am","1am","2am","3am","4am","5am","6am","7am","8am","9am","10am","11am","Noon"];
 });
 
-mainApp.controller('weekController', function() {
+mainApp.controller('weekController', function($scope) {
   $scope.message = "This is the week controller";
-})
+});
